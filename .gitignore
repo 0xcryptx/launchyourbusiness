@@ -2,3 +2,11 @@
 
 # Claude Code personal (local) settings
 .claude/settings.local.json
+
+# Internal brand reference (not part of the site)
+brand_board.txt
+assets/brandboard.html
+assets/brandboard.png
+
+# Claude Code
+.claude/
