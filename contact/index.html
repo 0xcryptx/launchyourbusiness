@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  Website designed & developed by BuildYourWeb
+  https://buildyourweb.ae
+  Crafted for Launch Your Business - Business Start-Up Programme.
+  (c) BuildYourWeb. All rights reserved.
+  ============================================================
+-->
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Contact | Launch Your Business</title>
+    <meta name="description" content="Tell me about your business idea and let's talk through the next steps to get it launched." />
+    <meta name="theme-color" content="#111111" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="canonical" href="https://www.launchyourbusinesses.com/contact/" />
+
+    <link rel="icon" type="image/png" href="../assets/logo/favicon.png?v=1" />
+    <link rel="apple-touch-icon" href="../assets/logo/favicon.png?v=1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.launchyourbusinesses.com/contact/" />
+    <meta property="og:title" content="Contact | Launch Your Business" />
+    <meta property="og:description" content="Tell me about your business idea and let's talk through the next steps." />
+    <meta property="og:image" content="https://www.launchyourbusinesses.com/assets/logo/lyb-logo.png" />
+    <meta property="og:site_name" content="Launch Your Business" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=24" />
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="../" aria-label="Launch Your Business home">
+          <img src="../assets/logo/lyb-logo-transparent.png" alt="Launch Your Business" width="2400" height="1071" decoding="async" />
+        </a>
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="../" data-page-link="home">Home</a></li>
+            <li><a href="../programme/" data-page-link="programme">The Programme</a></li>
+            <li><a href="../about/" data-page-link="about">About</a></li>
+            <li><a href="./" data-page-link="contact">Contact</a></li>
+          </ul>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a class="nav-cta" href="./">Get started <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <span class="scroll-progress" aria-hidden="true"></span>
+    </header>
+
+    <main id="main">
+      <section class="hero hero--page">
+        <svg class="hero-line" viewBox="0 0 1000 420" fill="none" aria-hidden="true">
+          <path id="heroPath" d="M0 400 H700 L940 160" pathLength="1" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M862 160 H940 V238" pathLength="1" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <circle class="hero-dot" r="4"><animateMotion dur="9s" repeatCount="indefinite" begin="1.3s"><mpath href="#heroPath" /></animateMotion></circle>
+        </svg>
+        <div class="container hero-inner">
+          <span class="eyebrow hero-anim">Contact</span>
+          <h1 data-split>Let's talk about <em>your business.</em></h1>
+          <p class="lead hero-anim" style="--i:1">It doesn't matter if it's a fully formed plan or just an idea you keep coming back to. Tell me where you're at and I'll be in touch.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <form id="contact-form" class="form reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="field">
+              <label for="full-name">Full name <span class="req">*</span></label>
+              <input id="full-name" name="Full Name" type="text" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="Email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="Phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Optional" />
+            </div>
+            <div class="field">
+              <label for="stage">Where are you at? <span class="req">*</span></label>
+              <select id="stage" name="Stage" required>
+                <option value="" selected disabled>Choose one</option>
+                <option value="Just an idea">It's just an idea for now</option>
+                <option value="Ready to start">I'm ready to get started</option>
+                <option value="Already started">I've already started</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="business">What's your business? <span class="req">*</span></label>
+              <input id="business" name="Business" type="text" placeholder="For example: a private dental practice, a mobile car repair service" required />
+            </div>
+            <div class="field field--full">
+              <label for="help">What would you like help with?</label>
+              <select id="help" name="Help With">
+                <option value="" selected>Everything, I'm starting from scratch</option>
+                <option value="Business structure">Business structure</option>
+                <option value="Banking and insurance">Banking &amp; insurance</option>
+                <option value="Branding">Branding</option>
+                <option value="Website design">Website design</option>
+                <option value="Marketing and social media">Marketing &amp; social media</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="message">Tell me a bit more <span class="req">*</span></label>
+              <textarea id="message" name="Message" placeholder="What do you do, what would you like to build, and is there anything worrying you about getting started?" required></textarea>
+            </div>
+            <div class="field field--full">
+              <label class="checkbox-label">
+                <input type="checkbox" name="Consent" value="Yes" required />
+                I'm happy to be contacted about my enquiry. <span class="req">*</span>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send enquiry</button>
+              <p id="formStatus" class="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="reveal">
+            <div class="contact-card">
+              <h3>Prefer email?</h3>
+              <p>Drop me a message any time and I'll reply as soon as I can.</p>
+              <div class="contact-row"><span>Email</span><a href="mailto:hello@launchyourbusinesses.com">hello@launchyourbusinesses.com</a></div>
+              <div class="contact-row"><span>Website</span><a href="https://www.launchyourbusinesses.com">launchyourbusinesses.com</a></div>
+            </div>
+            <div class="contact-note">
+              <h3>What happens next?</h3>
+              <p>I'll read through what you've sent and get back to you to arrange a chat about your business and how the programme can help.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div id="formToast" class="toast" role="status" aria-live="polite">Thanks, your enquiry has been sent. I'll be in touch soon.</div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="../" aria-label="Launch Your Business home">
+              <img src="../assets/logo/lyb-logo-transparent.png" alt="Launch Your Business" width="2400" height="1071" decoding="async" loading="lazy" />
+            </a>
+            <p>Helping people turn their skills and ideas into a business of their own.</p>
+          </div>
+          <nav class="footer-col" aria-label="Footer">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="../">Home</a></li>
+              <li><a href="../programme/">The Programme</a></li>
+              <li><a href="../about/">About</a></li>
+              <li><a href="./">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer-col">
+            <h4>Get in touch</h4>
+            <ul>
+              <li><a href="mailto:hello@launchyourbusinesses.com">hello@launchyourbusinesses.com</a></li>
+              <li><a href="#contact-form">Send an enquiry</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Launch Your Business</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js?v=10"></script>
+  </body>
+</html>
